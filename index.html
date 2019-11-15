@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      
+      <!-- Header title -->
+      <div class="row">
+        <div class="col-12 font-size-vh-10 background-color-blue color-white" style="height:20vh">
+          <span class="position-center">BMI Calculator</span>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="row">
+        
+        <!-- Weight -->
+        <div class="col-12 mt-3">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Weight</span>
+            </div>
+            <input id="inputBmiWeight" type="text" class="form-control" placeholder="kg" aria-label="Weight" aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+        <!-- Height -->
+        <div class="col-12 mt-1">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Height</span>
+            </div>
+            <input id="inputBmiHeight" type="text" class="form-control" placeholder="cm" aria-label="Height" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 text-center">
+              <!-- Calculate button -->
+              <button id="btnCalculateBmi" type="button" class="mr-1 btn btn-primary btn-lg background-color-blue">Calculate BMI</button>
+              <!-- Clear all button -->
+              <button id="btnClearAll" type="button" class="ml-1 btn btn-danger btn-lg background-color-red">Clear all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div id="cardBmiResult" class="row my-3 hide-element">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body w-100">
+              <h5 class="card-title">BMI: <span id="resultOfBmiNumber"></span></h5>
+              <p class="card-text" id="resultOfBmiText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alert message -->
+    <div id="bmiAlertMessage" class="row hide-element">
+      <div class="col-12 mt-2">
+        <div id="bmiAlertMessageText" class="alert alert-danger background-color-red color-white" role="alert">
+        </div>
+      </div>
+    </div>
+
+    <!-- JS for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- index.js -->
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+
+</html>
